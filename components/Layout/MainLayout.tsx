@@ -5,7 +5,7 @@ import RightSidebar from "../RightSidebar/RightSidebar";
 
 function MainLayout() {
   return (
-    <div className="grid grid-cols-12 gap-4 p-4">
+    <div className="grid grid-cols-12 gap-4 p-4 bg-[#F4F2EE]">
       
       {/* LEFT */}
       <div className="col-span-3">

@@ -9,7 +9,7 @@ function Posting() {
         <input
           type="text"
           placeholder="post here ..."
-          className="w-full px-12 py-2 border border-black rounded-full focus:outline-none"
+          className="w-full px-12 py-2 border border-black rounded-full focus:outline-none text-black"
         />
      </div>
 
@@ -18,16 +18,16 @@ function Posting() {
         <h1 className="">someone see </h1>
         <h1 className="">someone see </h1>
         <h1 className="">someone see </h1>
-// <div className="flex justify-between border-t pt-3 text-gray-600">
+// <div className="flex justify-between border-t pt-3 text-black">
        </div> */}
       {/* Write Article */}
-      <div className="flex items-center gap-2 cursor-pointer hover:bg-gray-100 px-3 py-2 rounded-lg">
+      <div className="flex items-center gap-2 cursor-pointer hover:bg-gray-100 px-3 py-2 rounded-lg text-black">
         <Image className="text-orange-500" size={20} />
         <span>Media</span>  
         </div>
         
       {/* Write Article */}
-           <div className="flex items-center gap-2 cursor-pointer hover:bg-gray-100 px-3 py-2 rounded-lg">
+           <div className="flex items-center gap-2 cursor-pointer hover:bg-gray-100 px-3 py-2 rounded-lg text-black">
         <Calendar className="text-orange-500" size={20} />
         <span>Event</span>  
         </div>
@@ -35,7 +35,7 @@ function Posting() {
       {/* Write Article */}
      
       {/* <div className="flex-col gap-2 cursor-pointer hover:bg-gray-100 px-3 py-2 rounded-lg"> */}
-      <div className="flex items-center gap-2 cursor-pointer hover:bg-gray-100 px-3 py-2 rounded-lg">
+      <div className="flex items-center gap-2 cursor-pointer hover:bg-gray-100 px-3 py-2 rounded-lg text-black">
         <FileText className="text-orange-500" size={20} />
         <span>Write article</span>  
       </div>

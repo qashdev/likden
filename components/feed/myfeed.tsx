@@ -1,6 +1,6 @@
 function Myfeed() {
   return (
-    <div className="bg-white w-fit p-4 rounded-xl shadow-sm">
+    <div className="bg-white w-fit p-4 rounded-xl shadow-sm text-black">
  
       <div className="flex justify-between items-center">
 

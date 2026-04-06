@@ -1,25 +1,18 @@
 import Posting from "./posting";
 import Myfeed from "./myfeed";
 
-// import Mypage from "./mypage";
-
-function feed() {
+function Feed() {
   return (
-    <div className="flex w-full flex flex-col gap-4 bg-gray-100 p-2 rounded-xl shadow-sm">
+    <div className="flex flex-col gap-4">
       
-         {/* CENTER */}
-      <div className="flex flex-col w-full ">
-          <Posting />
-      </div>
+      {/* POST BOX */}
+      <Posting />
 
-      {/* LEFT */}
-      <div className="flex flex-col w-full ">
-        <Myfeed />
-      </div>
-
+      {/* POSTS */}
+      <Myfeed />
 
     </div>
   );
 }
 
-export default feed;
+export default Feed;
