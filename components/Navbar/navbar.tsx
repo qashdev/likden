@@ -73,7 +73,10 @@ function Navbar() {
       className="w-6 h-6 rounded-full object-cover"
     />
     <span>Me</span>
-  
+
+
+
+    
     </div>
     <div className="flex flex-col items-center text-xs hover:text-black cursor-pointer">
     <FaTh className="text-xl" />
