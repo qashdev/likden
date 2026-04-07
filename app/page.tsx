@@ -1,7 +1,7 @@
 import MainLayout from "@/components/Layout/MainLayout";
 export default function Home() {
   return (
-    <div className="flex  items-center justify-center min-h-screen ">
+    <div className="flex  items-center justify-center min-h-screen bg-[#F4F2EE]">
        <MainLayout />;
       {/* <div className="flex items-center pr-10  gap-4">
         <h1 className="text-xl font-bold">Logo</h1>
