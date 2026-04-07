@@ -76,7 +76,7 @@ function Navbar() {
             <FaBell className="text-xl" />
             <span>Notifications</span>
             <span className="absolute -top-1 right-1 bg-red-500 text-white text-[10px] px-1 rounded-full">
-              22
+              7
             </span>
           </div>
 
