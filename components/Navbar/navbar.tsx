@@ -44,8 +44,8 @@ function Navbar() {
         <div className="flex-1 mx-4 max-w-xl">
           <input
             type="text"
-            placeholder="Search..."
-            className="w-full px-4 py-2 bg-gray-100 rounded-full border border-gray-300 focus:outline-none focus:border-blue-500"
+            placeholder="Search"
+            className="w-full px-4 py-2 bg-gray-100 text-gray-700 placeholder:text-gray-500 rounded-full border border-gray-300 focus:outline-none focus:border-blue-500"
           />
         </div>
 
