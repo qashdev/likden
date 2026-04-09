@@ -2,9 +2,9 @@ function Profile() {
   return (
 
     
-    <div className="bg-white relative shadow-sm text-black text-xs w-[100%] rounded-xl">
+    <div className="bg-white relative shadow-sm text-black text-xs w-full rounded-xl">
       <div className="relative Flex items-center justify-center ">
-      <img src="/icons/003.jpg" alt="background" className="flex items-center justify-center w-full h-16 object-cover rounded-t-xl Flex items-center justify-center " />
+      <img src="/icons/003.jpg" alt="background" className="flex items-center justify-center w-full h-17 object-cover rounded-t-xl Flex items-center justify-center " />
       <img src="/icons/002.jpg" alt="profile" className="w-20 h-20 rounded-full absolute top-10 left-5.5 " />
       </div>
       <div className="mt-10  pl-4 py-4 " >

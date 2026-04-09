@@ -2,7 +2,7 @@ import { Image, Calendar, FileText } from "lucide-react";
 
 function Posting() {
   return (
-   <div className="flex flex-col bg-white p-4 rounded-xl shadow-sm gap-4 hidden md:block">
+   <div className="flex flex-col bg-white pt-4 pl-4 pr-4 rounded-xl shadow-sm gap-4 hidden md:block">
       <div className="flex items-center  gap-4">
         <img src="/icons/002.jpg" alt="profile" className="w-10 h-10 rounded-full" />
 
@@ -13,7 +13,7 @@ function Posting() {
         />
      </div>
 
-     <div className="grid grid-cols-3 gap-4">
+     <div className="grid grid-cols-3 gap-4 pl-4 pt-4 -pb-4 ">
         {/* <div className="flex items-center gap-6">
         <h1 className="">someone see </h1>
         <h1 className="">someone see </h1>

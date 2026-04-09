@@ -7,9 +7,9 @@ function MainLayout() {
     <div className="bg-[#F4F2EE] max-w-6xl mx-auto flex-auto flex items-center justify-between">
 
       {/* 🔥 CENTERED CONTAINER */}
-      <div className="max-w-6xl mx-auto bg-[#F4F2EE]">
+      <div className="max-w-8xl mx-auto bg-[#F4F2EE]">
 
-        <div className="grid grid-cols-12 gap-4 py-4">
+        <div className="grid grid-cols-12  py-4 gap-4">
           
           {/* LEFT */}
           <div className="hidden md:block md:col-span-3">
