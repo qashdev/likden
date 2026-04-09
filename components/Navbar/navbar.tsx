@@ -10,21 +10,20 @@ import {
   FaBell,
   FaTh,
   FaBullhorn,
+  FaSearch,
 } from "react-icons/fa";
 
 function Navbar() {
   const [open, setOpen] = useState(false);
+  const [active, setActive] = useState("home"); // ✅ added
 
   return (
-    <nav className="bg-white shadow-md">
+   <nav className="flex items-center justify-between bg-white py-2 shadow-sm sticky top-0 z-10 h-13 pt-2">
 
-      {/* 🔥 CENTERED CONTAINER */}
-      <div className="max-w-6xl mx-auto px-2 md:px-4 py-3 flex items-center justify-between">
+      <div className="max-w-6xl mx-auto flex-auto flex items-center justify-between">
 
         {/* LEFT */}
-        <div className="flex items-center gap-3">
-          
-          {/* Hamburger (mobile only) */}
+        <div className="flex items-center gap-1">
           <div className="md:hidden text-black">
             <FaBars
               className="text-xl cursor-pointer"
@@ -32,72 +31,135 @@ function Navbar() {
             />
           </div>
 
-          {/* Logo */}
           <img
             src="/icons/OIP.jpg"
             alt="logo"
-            className="w-10 h-10"
+            className="flex-fit h-8 object-cover"
           />
         </div>
 
-        {/* CENTER (Search) */}
-        <div className="flex-1 mx-4 max-w-xl">
+        {/* CENTER */}
+        {/* <div className="flex-1 mx-2 max-w-xl">
           <input
             type="text"
             placeholder="Search"
-            className="w-full px-4 py-2 bg-gray-100 text-gray-700 placeholder:text-gray-500 rounded-full border border-gray-300 focus:outline-none focus:border-blue-500"
+            className="w-85 px-2 py-1 bg-white text-gray-700 placeholder:text-gray-500 rounded-full border border-gray-300 focus:outline-none focus:border-blue-500"
           />
+        </div> */}
+        <div className="flex-1 mx-2 max-w-xl">
+        <div className="relative">
+
+          {/* 🔍 Icon */}
+          <FaSearch className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-700 text-sm" />
+
+          {/* Input */}
+          <input
+            type="text"
+            placeholder="Search"
+            className="w-[70%] p-2 pl-9 pr-4 bg-white text-gray-700 placeholder:text-gray-500 rounded-full border border-gray-300 focus:outline-none focus:border-blue-500"
+          />
+
         </div>
+      </div>
 
-        {/* RIGHT (Desktop only) */}
-        <div className="hidden md:flex items-center gap-8 text-gray-600">
+        {/* RIGHT */}
+        <div className="hidden md:flex items-center gap-7 text-gray-600">
 
-          <div className="flex flex-col items-center text-xs hover:text-black cursor-pointer">
+          {/* Home */}
+          <div
+            onClick={() => setActive("home")}
+            className={`flex flex-col items-center text-xs cursor-pointer 
+              ${active === "home"
+                ? "text-black border-b-2 border-black p-2"
+                : "text-gray-600 hover:text-black"}
+            `}
+          >
             <FaHome className="text-xl" />
             <span>Home</span>
           </div>
 
-          <div className="flex flex-col items-center text-xs hover:text-black cursor-pointer">
+          {/* Network */}
+          <div
+            onClick={() => setActive("network")}
+            className={`flex flex-col items-center text-xs cursor-pointer 
+              ${active === "network"
+                ? "text-black border-b-2 border-black p-2"
+                : "text-gray-600 hover:text-black"}
+            `}
+          >
             <FaUserFriends className="text-xl" />
             <span>My Network</span>
           </div>
 
-          <div className="flex flex-col items-center text-xs hover:text-black cursor-pointer">
+          {/* Jobs */}
+          <div
+            onClick={() => setActive("jobs")}
+            className={`flex flex-col items-center text-xs cursor-pointer 
+              ${active === "jobs"
+                ? "text-black border-b-2 border-black p-2"
+                : "text-gray-600 hover:text-black"}
+            `}
+          >
             <FaBriefcase className="text-xl" />
             <span>Jobs</span>
           </div>
 
-          <div className="flex flex-col items-center text-xs hover:text-black cursor-pointer">
+          {/* Messaging */}
+          <div
+            onClick={() => setActive("msg")}
+            className={`flex flex-col items-center text-xs cursor-pointer 
+              ${active === "msg"
+                ? "text-black border-b-2 border-black p-2"
+                : "text-gray-600 hover:text-black"}
+            `}
+          >
             <FaCommentDots className="text-xl" />
             <span>Messaging</span>
           </div>
 
-          <div className="flex flex-col items-center text-xs relative hover:text-black cursor-pointer">
+          {/* Notifications */}
+          <div
+            onClick={() => setActive("notifications")}
+            className={`flex flex-col items-center text-xs relative cursor-pointer 
+              ${active === "notifications"
+                ? "text-black border-b-2 border-black p-2"
+                : "text-gray-600 hover:text-black"}
+            `}
+          >
             <FaBell className="text-xl" />
             <span>Notifications</span>
-            <span className="absolute -top-1 right-1 bg-red-500 text-white text-[10px] px-1 rounded-full">
+            <span className="absolute -top-1 right-4 bg-red-500 text-white text-[12px] px-1 rounded-full">
               7
             </span>
           </div>
 
-          <div className="flex flex-col items-center text-xs hover:text-black cursor-pointer">
+          {/* Profile */}
+          <div className="flex flex-col items-center text-xs hover:text-black cursor-pointer ">
             <img
               src="/icons/001.jpg"
               alt="profile"
               className="w-6 h-6 rounded-full object-cover"
             />
-            <span>Me</span>
+            <div className="flex items-center gap-1 ">
+              <span>Me</span>
+              <span className="text-[10px]">▼</span>
+            </div>
           </div>
 
-          <div className="flex flex-col items-center text-xs hover:text-black cursor-pointer">
+          {/* Divider */}
+          <div className="h-13 w-px bg-gray-200"></div>
+
+          {/* Business */}
+          <div className="flex flex-col items-center text-xs hover:text-black cursor-pointer ">
             <FaTh className="text-xl" />
-            <div className="flex items-center gap-1">
+            <div className="flex items-center gap-1 ">
               <span>For Business</span>
               <span className="text-[10px]">▼</span>
             </div>
           </div>
 
-          <div className="flex flex-col items-center text-xs hover:text-black cursor-pointer">
+          {/* Advertise */}
+          <div className="flex flex-col items-center text-xs hover:text-black cursor-pointer ">
             <FaBullhorn className="text-xl" />
             <span>Advertise</span>
           </div>
@@ -106,18 +168,15 @@ function Navbar() {
 
       </div>
 
-      {/* 🔥 MOBILE MENU */}
+      {/* MOBILE MENU */}
       {open && (
         <>
-          {/* Overlay */}
           <div
             className="fixed inset-0 bg-black/30 z-40"
             onClick={() => setOpen(false)}
           />
 
-          {/* Sidebar */}
           <div className="fixed top-0 left-0 w-64 h-full bg-white shadow-lg p-4 z-50">
-
             <button
               className="mb-4 text-black font-semibold"
               onClick={() => setOpen(false)}
@@ -135,11 +194,9 @@ function Navbar() {
               <span>For Business</span>
               <span>Advertise</span>
             </div>
-
           </div>
         </>
       )}
-
     </nav>
   );
 }

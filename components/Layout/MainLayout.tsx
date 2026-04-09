@@ -4,10 +4,10 @@ import RightSidebar from "../RightSidebar/RightSidebar";
 
 function MainLayout() {
   return (
-    <div className="bg-[#F4F2EE] min-h-screen">
+    <div className="bg-[#F4F2EE] max-w-6xl mx-auto flex-auto flex items-center justify-between">
 
       {/* 🔥 CENTERED CONTAINER */}
-      <div className="max-w-6xl mx-auto px-2 md:px-4 bg-[#F4F2EE]">
+      <div className="max-w-6xl mx-auto bg-[#F4F2EE]">
 
         <div className="grid grid-cols-12 gap-4 py-4">
           

@@ -4,7 +4,7 @@ import Mypage from "./mypage";
 
 function leftsidebar() {
   return (
-    <div className=" grid gap-3 w-full bg-[#F4F2EE] p-2 rounded-xl">
+    <div className=" grid w-full bg-[#F4F2EE] rounded-xl gap-4">
       
       {/* LEFT */}
       <div className="col-span-3">

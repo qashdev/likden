@@ -2,11 +2,13 @@ function Profile() {
   return (
 
     
-    <div className="bg-white p-4 relative rounded-xl shadow-sm text-black text-xs ">
-      <img src="/icons/003.jpg" alt="profile" className="flex-fit fullw-20 h-20 object-cover rounded-xl" />
-      <img src="/icons/002.jpg" alt="profile" className="w-20 h-20 rounded-full absolute top-18 left-4 " />
-      <div className="mt-15">
-      <h2 className="font-bold mb-2">QASIR KHAN </h2>
+    <div className="bg-white relative rounded-xl shadow-sm text-black text-xs ">
+      <div className="relative">
+      <img src="/icons/003.jpg" alt="profile" className="flex-fit full h-20 object-cover rounded-xl" />
+      <img src="/icons/002.jpg" alt="profile" className="w-20 h-20 rounded-full absolute top-10 left-5.5 " />
+      </div>
+      <div className="mt-10 px-3 " >
+      <h1 className="font-semibold mb-2 text-lg">QASIR KHAN </h1>
       <p className="text-sm">Full Stack Developer | Building Fast, Scalable, User-Focused Web Products | From Idea to Deployment</p>
       <p className="text-sm text-gray-600">Delhi, India</p>
       <div className="flex items-center gap-2">
